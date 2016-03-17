@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Better Trailheads",
+  "description": "This extension improves the questions and answers for trailheads.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "runA_at": "document_end"
+    }
+  ]
+}
